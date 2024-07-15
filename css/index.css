@@ -1,0 +1,103 @@
+.navbar {
+    background: rgb(152,0,0);
+    background: linear-gradient(0deg, rgba(152,0,0,1) 0%, rgba(209,11,11,1) 100%);
+}
+
+.nav-link:hover {
+    background: rgb(134, 3, 3);
+}
+
+.body {
+    background: rgb(8,1,148);
+    background: linear-gradient(0deg, #131B35 0%, #3B5378 100%) fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    background: #00223F;
+    color: white;
+}
+
+.flex {
+    display: flex; /* or inline-flex */
+}
+
+@media (max-width: 990px) {
+    .flex {
+      flex-wrap: wrap-reverse;
+    }
+    .contacts {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .grid {
+        grid-template-columns: auto auto !important;
+        justify-content: space-evenly;
+    }
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e6e6e6 !important;
+    text-decoration: none;
+}
+
+.fa-phone .fa-envelope {
+    color: white !important;
+}
+
+.paslaugos {
+    justify-content: space-between;
+}
+
+p {
+    text-align: justify;
+    padding: 5px;
+}
+
+.card {
+    background-color: #131B35;
+    padding: 5px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 20px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: auto !important;
+        justify-content: space-evenly;
+    }
+    .carousel {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+.org-price {
+    text-decoration: line-through;
+}
+
+.price {
+    background: rgb(152,0,0);
+    border-color: rgb(152,0,0) !important;
+    background: linear-gradient(0deg, rgba(152,0,0,1) 0%, rgba(209,11,11,1) 100%);
+    margin:0 auto;
+    display:block;
+}
+
+.carousel-item img {width: 50%; min-height: 60%;}
+
+.carousel-inner img {
+    width: 40%;    
+    margin: auto;
+    min-height: 100px;
+}
